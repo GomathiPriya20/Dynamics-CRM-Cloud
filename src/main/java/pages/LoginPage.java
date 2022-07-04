@@ -72,25 +72,8 @@ public class LoginPage extends WebDriverServiceImpl{
 		return new LoginPage();
 	}	
 
-	//Click on Yes in stay signed in window
-	public DashboardPage clicYesInStaySignedin() throws InterruptedException {
-
-		if(getDriver().findElements(By.id("idSIButton9")).size()>0){
-			click(getDriver().findElement(By.id("idSIButton9")),"Yes in Stay Signed In");
-		}
-		Thread.sleep(2000);
-
-		return new DashboardPage();
-	}	
-
-	//Click on Yes in stay signed in window
-	public void selectPremierAccount() throws InterruptedException {
-		switchToFrame(1);
-		if(verifyIsDisplayed(getDriver().findElement(By.xpath("//div[@id='AppDetailsSec_1_Item_3']/div[2]")))) {
-			click(getDriver().findElement(By.xpath("")),"Premier");
-		}
-		switchToDefaultContent();
-	}	
+	
+	
 
 
 
